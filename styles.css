@@ -1,0 +1,36 @@
+:root {
+    --bg-color: #ffffff; /* Light background */
+    --text-color: #26268f; /* Light text */
+    --button-bg: #dcd2d2; /* Light button */
+}
+
+body.dark-mode {
+    --bg-color: #121212; /* Dark background */
+    --text-color: #ffffff; /* Dark text */
+    --button-bg: #932121; /* Dark button */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    font-family:'Times New Roman', Times, serif;
+    padding: 20px;
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    border:none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {   /*The :hover pseudo-class applies styles to an element when the user hovers over it with a mouse or trackpad.
+     It can be used on most elements, 
+    although it's most commonly associated with links, buttons, and interactive UI components*/
+    opacity: 0.8;
+    color: red;
+}
